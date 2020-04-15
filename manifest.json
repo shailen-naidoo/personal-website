@@ -1,26 +1,10 @@
 {
-  "name": "Justin Slack",
-  "short_name": "Justin Slack",
+  "name": "Shailen Naidoo",
+  "short_name": "Shailen Naidoo",
   "lang": "en-GB",
-  "start_url": "justinslack.com/",
+  "start_url": "shailen.dev/",
   "display": "standalone",
   "theme_color": "#ffffff",
-  "icons": [
-    {
-      "src": "/android-chrome-192x192.png",
-      "sizes": "192X192",
-      "type": "image/png"
-    },
-    {
-      "src": "/android-chrome-256x256.png",
-      "sizes": "256x256",
-      "type": "image/png"
-    },
-    {
-      "src": "/android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ],
+  "icons": [],
   "background_color": "#ffffff"
 }
