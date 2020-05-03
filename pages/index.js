@@ -357,7 +357,7 @@ const page = () => html`
                     <li> <a href="https://vuejscapetown.netlify.com/">Vue.js in Cape Town</a> </li>
                 </ul>
             </p>
-            <p>I am a regular at the <a href="https://www.meetup.com/Codebridge/events/bznrhryznbfb/">Codebridge Community Evening</a> - a collaborative civic tech meetup - where I am part of a team of designers, developers, data scientists and journalists working on a website for the <a href="https://budgetjusticesa.org">Budget Justice Coalition</a>, a civil society coalition that aims to collaboratively build people's participation in and understanding of South Africa's budget and planning processes.</p>
+            <p>I am a regular at the <a href="https://www.meetup.com/Codebridge/events/bznrhryznbfb/">Codebridge Community Evening</a> - a collaborative civic tech meetup - where I am part of a team of designers, developers, data scientists and journalists working on multiple projects aimed at helping improve the lives of South Africans</p>
             <h3>Find me elsewhere</h3>
             <p> <a class="inline-link" href="https://github.com/ShailenNaidoo">Github</a>
                 <!-- <a class="inline-link" href="https://www.linkedin.com/in/shailen-naidoo-340005a2/">LinkedIn</a> --><a class="inline-link" href="https://twitter.com/shailen_naidoo">Twitter</a> <a class="insure-link" href="https://dev.to/shailennaidoo">DEV.to</a> </p>
