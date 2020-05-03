@@ -341,7 +341,7 @@ const page = () => html`
         <p class="lead"> Hello, I'm <strong>Shailen Naidoo</strong> — an open-source enthusiast, JavaScript developer, speaker and tech community organiser. I am currently a Software Engineer at <a href="https://lumkani.com">Lumkani</a>, an insure-tech company that builds network connected fire alarms for townships. </p>
         <article class="home-section">
             <h2>My passions</h2>
-            <p> I am fortunate enough to have two passions, I have been playing guitar for close to 10 years and programming for the last 4 years. My focus is to make the Web more accessible to the undeserved communities in South Africa. </p>
+            <p> I am fortunate enough to have two passions, I have been playing guitar for close to 10 years and programming for the last 4 - 5 years. My focus is to make the Web more accessible to the undeserved communities in South Africa. </p>
             <p></p>
             <h2>Teaching</h2>
             <p> I regularly teach JavaScript at the <a href="https://codespace.co.za">CodeSpace Academy</a> when I am free, I have also hosted workshops on technologies such as <a href="https://graphql.org/">GraphQL</a> and <a href="https://vuejs.org">Vue.js</a> and regularly give advice on Web Technologies on online forums </p>
