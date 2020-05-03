@@ -1,0 +1,380 @@
+const page = () => `
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Shailen Naidoo | JavaScript Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="This is an example of a title.">
+    <meta name="description" content="This is an example of a meta description. This will show up in search results.">
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/SourceSansVariable-Roman.otf.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/SourceSansVariable-Roman.ttf.woff2" crossorigin>
+    <style type="text/css">
+        html {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%
+        }
+        
+        body {
+            font-family: sans-serif;
+            margin: 0
+        }
+        
+        a:active,
+        a:hover {
+            outline: 0
+        }
+        
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+        
+        sup {
+            top: -0.5em
+        }
+        
+        sub {
+            bottom: -0.25em
+        }
+        
+        hr {
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            height: 0
+        }
+        
+        pre {
+            overflow: auto
+        }
+        
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: monospace, monospace;
+            font-size: 1em
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+        
+        td,
+        th {
+            padding: 0
+        }
+        
+        ::-moz-selection {
+            background: #585e6b;
+            color: white
+        }
+        
+        ::selection {
+            background: #585e6b;
+            color: white
+        }
+        
+        html {
+            font-size: 14px
+        }
+        
+        @media (min-width: 320px) and (max-width: 1400px) {
+            html {
+                font-size: calc( 14px + (18 - 14) * ((100vw - 320px) / (1400 - 320)))
+            }
+        }
+        
+        @media (min-width: 1400px) {
+            html {
+                font-size: 18px
+            }
+        }
+        
+        h1,
+        .h1 {
+            line-height: 1em;
+            margin-top: 0.5em;
+            margin-bottom: 1em
+        }
+        
+        h2,
+        .h2 {
+            font-size: 2em;
+            line-height: 1.5em;
+            margin-top: 0.75em;
+            margin-bottom: 0.75em
+        }
+        
+        h3,
+        .h3 {
+            line-height: 1.125em;
+            margin-top: 1.125em;
+            margin-bottom: 0.5em
+        }
+        
+        h4,
+        .h4 {
+            line-height: 1.6875em;
+            margin-top: 1.6875em;
+            margin-bottom: 0em
+        }
+        
+        h5,
+        .h5 {
+            line-height: 1.6875em;
+            margin-top: 1.6875em;
+            margin-bottom: 0em
+        }
+        
+        p,
+        ul,
+        ol,
+        table,
+        blockquote {
+            margin-top: 0em;
+            margin-bottom: 1.6875em
+        }
+        
+        hr,
+        .hr {
+            border: 1px solid #c1c1c1;
+            margin: -1px 0 2rem
+        }
+        
+        b,
+        i,
+        strong,
+        em,
+        small,
+        code {
+            line-height: 0
+        }
+        
+        sub,
+        sup {
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+        
+        sup {
+            top: -0.5em
+        }
+        
+        sub {
+            bottom: -0.25em
+        }
+        
+        small {
+            font-size: 80%
+        }
+        
+        ol,
+        ul {
+            padding: 0;
+            margin-left: 1.5rem
+        }
+        
+        ol,
+        .list-ordered {
+            list-style: decimal
+        }
+        
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+        
+        html {
+            background: linear-gradient(135deg, #cff4d2 0%, #cff4d2 20%, #8cffe8 100%);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100%;
+            max-height: 100%;
+            -webkit-tap-highlight-color: transparent;
+            scrollbar-color: green;
+            scrollbar-width: thin
+        }
+        
+        body {
+            color: #404d5b;
+            font-family: "Source", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-weight: 400;
+            height: 100vh;
+            letter-spacing: 0.01rem;
+            line-height: 1.7;
+            padding: 0 1rem
+        }
+        
+        a:not(.home-link) {
+            border-bottom: 1px solid #9d005a;
+            color: #9d005a;
+            display: inline-block;
+            font-weight: 550;
+            line-height: 1.4;
+            outline: none;
+            position: relative;
+            text-decoration: none;
+            transition: background-color 0.3s, border-color 0.3s;
+            vertical-align: baseline;
+            white-space: nowrap
+        }
+        
+        a:not(.home-link):hover {
+            border-color: rgba(52, 73, 94, 0);
+            background-color: rgba(52, 73, 94, 0.1)
+        }
+        
+        img {
+            max-width: 100%
+        }
+        
+        .container {
+            max-width: 1170px;
+            margin: 0 auto
+        }
+        
+        .main-header {
+            align-items: center;
+            display: flex
+        }
+        
+        .home-link {
+            align-items: center;
+            border: 4px solid #404d5b;
+            color: #404d5b;
+            display: flex;
+            font-size: 1.2em;
+            font-weight: 650;
+            height: 60px;
+            justify-content: center;
+            margin-top: 2rem;
+            text-decoration: none;
+            width: 60px
+        }
+        
+        .sr-only:not(:focus):not(:active) {
+            clip: rect(0 0 0 0);
+            clip-path: inset(100%);
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px
+        }
+    </style>
+    <style>
+        /* Home page */
+        
+        .main-home {
+            display: grid;
+            padding-bottom: 5rem;
+        }
+        
+        .home-header {
+            font-size: 4em;
+            margin: 4rem 0 3rem;
+        }
+        
+        @media (min-width: 33.750em) {
+            .home-header {
+                font-size: 5.5em;
+            }
+            .home-header-indent {
+                display: block;
+                /* transform: translateX(1ch); */
+            }
+        }
+        
+        .lead {
+            font-size: 1.2em;
+            max-width: 50ch;
+        }
+        
+        .home-section {
+            max-width: 65ch;
+        }
+        
+        .progress {
+            color: #585e6b;
+            font-family: monospace;
+            position: absolute;
+            right: 2rem;
+            top: 2rem;
+            writing-mode: vertical-lr;
+        }
+        
+        p + h3 {
+            margin-top: 5rem;
+        }
+        
+        .inline-link {
+            margin-right: 1rem;
+        }
+    </style>
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
+    <!-- <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"> -->
+    <!-- <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"> -->
+    <!-- <link rel="manifest" href="/manifest.json"> -->
+    <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"> -->
+    <meta name="theme-color" content="#ffffff">
+    <link type="application/atom+xml" rel="alternate" href="https:/justinslack.com/feed.xml" title="Justin Slack" />
+    <!-- Begin Jekyll SEO tag v2.0.0 -->
+    <title>Shailen Naidoo | JavaScript Developer - Justin Slack</title>
+    <meta property="og:title" content="Shailen Naidoo | JavaScript Developer" />
+    <meta name="description" content="Open-source JavaScript developer and lover of civic-tech :)" />
+    <meta property="og:description" content="Open-source JavaScript developer and lover of civic-tech :)" />
+    <link rel="canonical" href="https:/justinslack.com/" />
+    <meta property="og:url" content="https:/justinslack.com/" />
+    <meta property="og:site_name" content="Justin Slack" />
+    <script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebSite", "name": "Justin Slack", "headline": "Shailen Naidoo | JavaScript Developer", "description": "Open-source JavaScript developer and lover of civic-tech :)", "logo": "https:/justinslack.com/siteicon.png", "url": "https:/justinslack.com/" } </script>
+    <!-- End Jekyll SEO tag -->
+</head>
+
+<body>
+    <header class="main-header container">
+        <a href="/" class="home-link"> <span>SN</span> </a>
+    </header>
+    <section class="main-home container">
+        <h1 class="home-header"> Open-source, <span class="home-header-indent">JavaScript Developer</span> </h1>
+        <!-- <small class="progress">Site in progress</small> -->
+        <p class="lead"> Hello, I'm <strong>Shailen Naidoo</strong> — an open-source enthusiast, JavaScript developer, speaker and tech community organiser. I am currently a Software Engineer at <a href="https://lumkani.com">Lumkani</a>, an insure-tech company that builds network connected fire alarms for townships. </p>
+        <article class="home-section">
+            <h2>My passions</h2>
+            <p> I am fortunate enough to have two passions, I have been playing guitar for close to 10 years and programming for the last 4 years. My focus is to make the Web more accessible to the undeserved communities in South Africa. </p>
+            <p></p>
+            <h2>Teaching</h2>
+            <p> I regularly teach JavaScript at the <a href="https://codespace.co.za">CodeSpace Academy</a> when I am free, I have also hosted workshops on technologies such as <a href="https://graphql.org/">GraphQL</a> and <a href="https://vuejs.org">Vue.js</a> and regularly give advice on Web Technologies on online forums </p>
+            <h2>Community</h2>
+            <p>Giving back to the dev community is very important to me.</p>
+            <p>I am the co-organizer of Vue.js South Africa which was started back in December 2018, we typically have 30+ attendees to the meetups.</p>
+            <p> In addition to organising community events I also speak at conferences and meetups and have run a number of workshops. These include:
+                <ul>
+                    <li> <a href="https://linuxconf.co.za/">LinuxConf 2019</a> </li>
+                    <li> <a href="https://www.meetup.com/DeveloperUG/">The Developer User Group</a> </li>
+                    <li> <a href="https://www.cmsafricasummit.org/">CMS Africa Summit 2019</a> </li>
+                    <li> <a href="https://www.meetup.com/cape-town-js/">Cape Town JavaScript</a> </li>
+                    <li> <a href="https://vuejscapetown.netlify.com/">Vue.js in Cape Town</a> </li>
+                </ul>
+            </p>
+            <p>I am a regular at the <a href="https://www.meetup.com/Codebridge/events/bznrhryznbfb/">Codebridge Community Evening</a> - a collaborative civic tech meetup - where I am part of a team of designers, developers, data scientists and journalists working on a website for the <a href="https://budgetjusticesa.org">Budget Justice Coalition</a>, a civil society coalition that aims to collaboratively build people's participation in and understanding of South Africa's budget and planning processes.</p>
+            <h3>Find me elsewhere</h3>
+            <p> <a class="inline-link" href="https://github.com/ShailenNaidoo">Github</a>
+                <!-- <a class="inline-link" href="https://www.linkedin.com/in/shailen-naidoo-340005a2/">LinkedIn</a> --><a class="inline-link" href="https://twitter.com/shailen_naidoo">Twitter</a> <a class="insure-link" href="https://dev.to/shailennaidoo">DEV.to</a> </p>
+        </article>
+    </section>
+</body>
+
+</html>
+`
+
+module.exports = {
+  page
+}
