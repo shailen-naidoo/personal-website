@@ -1,4 +1,5 @@
 dependencies:
+  html-template-tag: 3.2.0
   hydrogen-cli: 1.0.0
 lockfileVersion: 5.1
 packages:
@@ -2575,4 +2576,5 @@ packages:
     resolution:
       integrity: sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=
 specifiers:
+  html-template-tag: ^3.2.0
   hydrogen-cli: ^1.0.0

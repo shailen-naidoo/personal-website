@@ -1,4 +1,6 @@
-const page = () => `
+const html = require('html-template-tag')
+
+const page = () => html`
 <!DOCTYPE html>
 <html lang="en">
 
