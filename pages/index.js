@@ -322,7 +322,7 @@ const page = () => html`
         }
     </style>
     <meta name="theme-color" content="#ffffff">
-    <title>Shailen Naidoo | JavaScript Developer - Justin Slack</title>
+    <title>Shailen Naidoo | JavaScript Developer</title>
     <meta property="og:title" content="Shailen Naidoo | JavaScript Developer" />
     <meta name="description" content="Open-source JavaScript developer and lover of civic-tech :)" />
     <meta property="og:description" content="Open-source JavaScript developer and lover of civic-tech :)" />
