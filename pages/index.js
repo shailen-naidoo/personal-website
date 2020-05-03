@@ -344,7 +344,7 @@ const page = () => html`
             <p> I am fortunate enough to have two passions, I have been playing guitar for close to 10 years and programming for the last 4 - 5 years. My focus is to make the Web more accessible to the undeserved communities in South Africa. </p>
             <p></p>
             <h2>Teaching</h2>
-            <p> I regularly teach JavaScript at the <a href="https://codespace.co.za">CodeSpace Academy</a> when I am free, I have also hosted workshops on technologies such as <a href="https://graphql.org/">GraphQL</a> and <a href="https://vuejs.org">Vue.js</a> and regularly give advice on Web Technologies on online forums </p>
+            <p>I have also hosted workshops on technologies such as <a href="https://graphql.org/">GraphQL</a> and <a href="https://vuejs.org">Vue.js</a> and regularly give advice on Web Technologies on online forums </p>
             <h2>Community</h2>
             <p>Giving back to the dev community is very important to me.</p>
             <p>I am the co-organizer of Vue.js South Africa which was started back in December 2018, we typically have 30+ attendees to the meetups.</p>
