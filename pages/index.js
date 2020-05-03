@@ -8,10 +8,10 @@ const page = () => html`
     <meta charset="utf-8">
     <title>Shailen Naidoo | JavaScript Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="This is an example of a title.">
-    <meta name="description" content="This is an example of a meta description. This will show up in search results.">
-    <link rel="preload" as="font" type="font/woff2" href="/fonts/SourceSansVariable-Roman.otf.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff2" href="/fonts/SourceSansVariable-Roman.ttf.woff2" crossorigin>
+    <meta name="title" content="Shailen Naidoo | JavaScript Developer">
+    <meta name="description" content="Open-source JavaScript developer and lover of civic-tech :)">
+    <!-- <link rel="preload" as="font" type="font/woff2" href="/fonts/SourceSansVariable-Roman.otf.woff2" crossorigin> -->
+    <!-- <link rel="preload" as="font" type="font/woff2" href="/fonts/SourceSansVariable-Roman.ttf.woff2" crossorigin> -->
     <style type="text/css">
         html {
             -ms-text-size-adjust: 100%;
