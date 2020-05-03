@@ -321,23 +321,14 @@ const page = () => html`
             margin-right: 1rem;
         }
     </style>
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
-    <!-- <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"> -->
-    <!-- <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"> -->
-    <!-- <link rel="manifest" href="/manifest.json"> -->
-    <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"> -->
     <meta name="theme-color" content="#ffffff">
-    <link type="application/atom+xml" rel="alternate" href="https:/justinslack.com/feed.xml" title="Justin Slack" />
-    <!-- Begin Jekyll SEO tag v2.0.0 -->
     <title>Shailen Naidoo | JavaScript Developer - Justin Slack</title>
     <meta property="og:title" content="Shailen Naidoo | JavaScript Developer" />
     <meta name="description" content="Open-source JavaScript developer and lover of civic-tech :)" />
     <meta property="og:description" content="Open-source JavaScript developer and lover of civic-tech :)" />
-    <link rel="canonical" href="https:/justinslack.com/" />
-    <meta property="og:url" content="https:/justinslack.com/" />
-    <meta property="og:site_name" content="Justin Slack" />
-    <script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebSite", "name": "Justin Slack", "headline": "Shailen Naidoo | JavaScript Developer", "description": "Open-source JavaScript developer and lover of civic-tech :)", "logo": "https:/justinslack.com/siteicon.png", "url": "https:/justinslack.com/" } </script>
-    <!-- End Jekyll SEO tag -->
+    <meta property="og:url" content="https:/shailen.dev/" />
+    <meta property="og:site_name" content="Shailen Naidoo" />
+    <script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebSite", "name": "Shailen Naidoo", "headline": "Shailen Naidoo | JavaScript Developer", "description": "Open-source JavaScript developer and lover of civic-tech :)", "logo": "", "url": "https:/shailen.dev/" } </script>
 </head>
 
 <body>
