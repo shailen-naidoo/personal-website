@@ -10,6 +10,7 @@ const page = () => html`
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="Shailen Naidoo | JavaScript Developer">
     <meta name="description" content="Open-source JavaScript developer and lover of civic-tech :)">
+    <link rel="icon" href="/public/logo.png">
     <!-- <link rel="preload" as="font" type="font/woff2" href="/fonts/SourceSansVariable-Roman.otf.woff2" crossorigin> -->
     <!-- <link rel="preload" as="font" type="font/woff2" href="/fonts/SourceSansVariable-Roman.ttf.woff2" crossorigin> -->
     <style type="text/css">
