@@ -25,7 +25,7 @@ collections:
         name: body
         widget: markdown
         required: true
-      - label: Slug
-        name: slug
+      - label: URL Slug
+        name: url-slug
         widget: hidden
         default: "{{slug}}"
