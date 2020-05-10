@@ -11,6 +11,7 @@ collections:
     folder: public/posts
     slug: "{{title}}"
     create: true
+    format: json
     fields:
       - label: Title
         name: title
