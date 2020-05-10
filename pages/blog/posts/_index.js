@@ -1,6 +1,6 @@
 const html = require('html-template-tag')
 
-const page = ({ data }) => html`
+const page = ({ route }) => html`
 <style>
   h2 {
     margin-bottom: 5px;
@@ -20,11 +20,9 @@ const page = ({ data }) => html`
     border-radius: 3px;
   }
 </style>
-<h2>Web Workers, multi-threading in the browser</h2>
+<h2>${route.data.title}</h2>
 <time datetime="2020-10-07">07 October 2020</time>
-<p>
-Web Workers are a simple means for web content to run scripts in background threads. The worker thread can perform tasks without interfering with the user interface. In addition, they can perform I/O using <code>XMLHttpRequest</code> (although the responseXML and channel attributes are always null). Once created, a worker can send messages to the JavaScript code that created it by posting messages to an event handler specified by that code (and vice versa). This article provides a detailed introduction to using web workers.
-</p>
+$${route.data.body}
 `
 
 module.exports = {
