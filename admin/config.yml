@@ -1,0 +1,4 @@
+backend:
+  name: github
+  repo: ShailenNaidoo/personal-website
+  branch: master
