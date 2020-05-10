@@ -274,6 +274,12 @@ module.exports = ({ content }) => html`
         white-space: nowrap;
         width: 1px
       }
+
+      code {
+        background-color: rgba(52, 73, 94, 0.1);
+        padding: 2px 5px;
+        border-radius: 2px;
+      }
     </style>
     <style>
       /* Home page */
