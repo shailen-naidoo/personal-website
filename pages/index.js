@@ -242,8 +242,13 @@ const page = () => html`
       }
 
       .main-header {
-        align-items: center;
+        align-items: baseline;
         display: flex
+      }
+
+      .main-header > a:nth-child(2) {
+        margin-left: 30px;
+        cursor: pointer;
       }
 
       .home-link {
@@ -333,6 +338,7 @@ const page = () => html`
   <body>
     <header class="main-header container">
       <a href="/" class="home-link"> <span>SN</span> </a>
+      <a href="/blog">Blog</a>
     </header>
     <section class="main-home container">
       <h1 class="home-header"> Open-source, <span class="home-header-indent">JavaScript Developer</span> </h1>
