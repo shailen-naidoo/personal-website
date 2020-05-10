@@ -1,5 +1,6 @@
 {
+  "url-slug": "{{slug}}",
   "title": "Web Workers",
-  "summary": "Multi-threading in the browser",
-  "body": "\\# Hello World"
+  "summary": "Web workers",
+  "body": "\\# Web workers"
 }
