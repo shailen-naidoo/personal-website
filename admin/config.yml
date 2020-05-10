@@ -25,3 +25,7 @@ collections:
         name: body
         widget: markdown
         required: true
+      - label: Slug
+        name: slug
+        widget: hidden
+        default: "{{slug}}"
