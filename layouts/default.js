@@ -331,7 +331,7 @@ module.exports = ({ content }) => html`
         margin-right: 1rem;
       }
     </style>
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#cff4d2">
     <title>Shailen Naidoo | JavaScript Developer</title>
     <meta property="og:title" content="Shailen Naidoo | JavaScript Developer" />
     <meta name="description" content="Open-source JavaScript developer and lover of civic-tech :)" />
