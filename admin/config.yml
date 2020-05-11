@@ -21,6 +21,13 @@ collections:
         name: summary
         widget: text
         required: true
+      - label: "Created at"
+        name: "create_at"
+        widget: "datetime"
+        default: ""
+        dateFormat: "DD-MM-YYYY"
+        timeFormat: "HH:mm"
+        format: "LLL"
       - label: Body
         name: body
         widget: markdown
