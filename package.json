@@ -10,9 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "html-template-tag": "^3.2.0",
-    "hydrogen-cli": "1.0.1-beta.0"
+    "hydrogen-cli": "1.0.1-beta.0",
+    "markdown-it": "^10.0.0"
   },
   "devDependencies": {
+    "fs-extra": "^9.0.0",
     "html-minifier": "^4.0.0"
   }
 }

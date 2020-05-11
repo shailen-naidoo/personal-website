@@ -1,0 +1,34 @@
+backend:
+  name: github
+  repo: ShailenNaidoo/personal-website
+  branch: master
+
+media_folder: public/media/images
+
+collections:
+  - label: Posts
+    name: posts
+    folder: public/posts
+    slug: "{{title}}"
+    create: true
+    format: json
+    fields:
+      - label: Title
+        name: title
+        widget: string
+        required: true
+      - label: Summary
+        name: summary
+        widget: text
+        required: true
+      - label: "Created at"
+        name: "created_at"
+        widget: "datetime"
+        default: ""
+        dateFormat: "DD-MM-YYYY"
+        timeFormat: "HH:mm"
+        format: "LLL"
+      - label: Body
+        name: body
+        widget: markdown
+        required: true
