@@ -4,6 +4,10 @@ const md = require('markdown-it')()
 const cwd = process.cwd()
 
 module.exports = async () => {
+  if (!(await fs.pathExists(`${cwd}/public/posts`))) {
+    return []
+  }
+
   const postFilePaths = await fs.readdir(`${cwd}/public/posts`)
   const posts = await Promise.all(postFilePaths.map(async (path) => {
     const data = await fs.readJSON(`${cwd}/public/posts/${path}`)

@@ -4,6 +4,10 @@ const html = require('html-template-tag')
 const cwd = process.cwd()
 
 const generateArticleCards = async () => {
+  if (!(await fs.pathExists(`${cwd}/public/posts`))) {
+    return []
+  }
+
   const postFilePaths = await fs.readdir(`${cwd}/public/posts`)
   const posts = await Promise.all(postFilePaths.map(async (path) => {
     const data = await fs.readJSON(`${cwd}/public/posts/${path}`)
@@ -39,27 +43,8 @@ const page = async () => html`
     border-bottom: none !important;
     cursor: pointer;
   }
-
-  article {
-    /* margin-top: 30px; */
-  }
 </style>
 ${await generateArticleCards()}
-<!-- <article>
-  <h2><a>Web Workers, multi-threading in the browser</a></h2>
-  <p>Web Workers is a browser API which allows use to run JS off the main thread</p>
-  <time datetime="2020-10-07">07 October 2020</time>
-</article>
-<article>
-  <h2><a>Is postMessage slow?</a></h2>
-  <p>Web Workers is a browser API which allows use to run JS off the main thread</p>
-  <time datetime="2020-10-07">07 October 2020</time>
-</article>
-<article>
-  <h2><a>When should you be using Web Workers?</a></h2>
-  <p>Web Workers is a browser API which allows use to run JS off the main thread</p>
-  <time datetime="2020-10-07">07 October 2020</time>
-</article> -->
 `
 
 module.exports = {
