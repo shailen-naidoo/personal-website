@@ -23,6 +23,10 @@ const page = ({ route }) => html`
     margin: 25px 0px;
     border-radius: 3px;
   }
+
+  hr {
+    margin-bottom: 0;
+  }
 </style>
 <h2>${route.data.title}</h2>
 <time datetime="${route.data.created_at}">${route.data.created_at}</time>
