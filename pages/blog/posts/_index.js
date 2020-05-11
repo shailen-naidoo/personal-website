@@ -6,6 +6,10 @@ const page = ({ route }) => html`
     margin-bottom: 5px;
   }
 
+  h3 {
+    margin-top: 15px !important;
+  }
+
   p {
     margin-bottom: 5px;
   }
