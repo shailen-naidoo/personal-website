@@ -349,6 +349,15 @@ module.exports = ({ content }) => html`
     <section class="main-home container">
       $${content}
     </section>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130574703-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', 'UA-130574703-3');
+    </script>
   </body>
 </html>
 `
