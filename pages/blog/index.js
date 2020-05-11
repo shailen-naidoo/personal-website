@@ -17,7 +17,7 @@ const generateArticleCards = async () => {
       <article>
         <h2><a href="/blog/posts/${slug}">${data.title}</a></h2>
         <p>${data.summary}</p>
-        <time datetime="${data.created_at}">${data.created_at}</time>
+        <time datetime="${new Date(data.created_at).toISOString()}">${data.created_at}</time>
       </article>
     `
   }))
