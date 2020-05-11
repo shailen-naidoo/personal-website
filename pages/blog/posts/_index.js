@@ -21,7 +21,7 @@ const page = ({ route }) => html`
   }
 </style>
 <h2>${route.data.title}</h2>
-<time datetime="2020-10-07">07 October 2020</time>
+<time datetime="${route.data.created_at}">${route.data.created_at}</time>
 $${route.data.body}
 `
 

@@ -22,7 +22,7 @@ collections:
         widget: text
         required: true
       - label: "Created at"
-        name: "create_at"
+        name: "created_at"
         widget: "datetime"
         default: ""
         dateFormat: "DD-MM-YYYY"
