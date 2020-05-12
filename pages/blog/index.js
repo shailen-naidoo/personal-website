@@ -42,6 +42,10 @@ const page = async () => html`
   article * a {
     border-bottom: none !important;
     cursor: pointer;
+    display: unset !important;
+    position: unset !important;
+    vertical-align: unset !important;
+    white-space: unset !important;
   }
 </style>
 ${await generateArticleCards()}
