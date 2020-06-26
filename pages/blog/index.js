@@ -1,4 +1,5 @@
 const fs = require('fs-extra')
+const emojiStrip = require('emoji-strip')
 const html = require('html-template-tag')
 
 const cwd = process.cwd()
@@ -15,7 +16,7 @@ const generateArticleCards = async () => {
 
     return html`
       <article>
-        <h2><a href="/blog/posts/${slug}">${data.title}</a></h2>
+        <h2><a href="/blog/posts/${emojiStrip(slug)}">${data.title}</a></h2>
         <p>${data.summary}</p>
         <time datetime="${new Date(data.created_at).toISOString()}">${data.created_at}</time>
       </article>
