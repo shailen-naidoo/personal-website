@@ -280,6 +280,29 @@ module.exports = ({ content }) => html`
         padding: 2px 5px;
         border-radius: 2px;
       }
+
+      pre {
+        background: #363C44;
+        border: 1px solid #ddd;
+        border-left: 3px solid black;
+        border-radius: 5px;
+        color: #666;
+        page-break-inside: avoid;
+        font-family: monospace;
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 1.6em;
+        max-width: 100%;
+        overflow: auto;
+        padding: 1em 1.5em;
+        display: block;
+        word-wrap: break-word;
+      }
+
+      pre code {
+        background-color: unset;
+        color: white;
+      }
     </style>
     <style>
       /* Home page */
