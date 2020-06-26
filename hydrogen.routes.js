@@ -1,4 +1,5 @@
 const fs = require('fs-extra')
+const emojiStrip = require('emoji-strip')
 const md = require('markdown-it')()
 
 const cwd = process.cwd()
@@ -18,7 +19,7 @@ module.exports = async () => {
         ...data,
         body: md.render(data.body),
       },
-      path: `/blog/posts/${slug}`
+      path: `/blog/posts/${emojiStrip(slug)}`
     }
   }))
 
