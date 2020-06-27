@@ -381,6 +381,11 @@ module.exports = ({ content }) => html`
   
       gtag('config', 'UA-130574703-3');
     </script>
+    <script>
+      navigator.serviceWorker.register('/sw.js')
+        .then(() => console.log('Service worker successfully registered'))
+        .catch(() => console.log('Service did not register correctly'))
+    </script>
   </body>
 </html>
 `
