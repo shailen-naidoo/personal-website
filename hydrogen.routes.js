@@ -22,8 +22,6 @@ module.exports = async () => {
       codeblock.innerHTML = highlight.highlightAuto(
         codeblock.innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>')
       ).value
-
-      console.log(codeblock.innerHTML)
     })
 
     return {
