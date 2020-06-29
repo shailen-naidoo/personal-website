@@ -23,6 +23,10 @@ ${urls.join('\n')}
 </urlset>
   `.replace('\n', '')
 
+  const posts = ctx.routes.filter(({ route }) => route.includes('/blog/posts/'))
+
+  await fs.outputFile(`${cwd}/blog-posts.json`, JSON.stringify(posts, null, 2))
+
   await fs.outputFile(`${cwd}/sitemap.xml`, sitemap)
 }
 

@@ -1,6 +1,7 @@
 module.exports = {
   name: 'Shailen Naidoo | JavaScript Developer',
   extraStaticFiles: [
-    'sitemap.xml'
+    'sitemap.xml',
+    'blog-posts.json'
   ]
 }
