@@ -1,6 +1,7 @@
 const html = require('html-template-tag')
 
 const page = ({ route }) => html`
+<link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/tomorrow-night-bright.css">
 <style>
   h2 {
     margin-bottom: 5px;
@@ -34,5 +35,8 @@ $${route.data.body}
 `
 
 module.exports = {
-  page
+  page,
+  head: () => [
+    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/default.min.css' }]
+  ]
 }
